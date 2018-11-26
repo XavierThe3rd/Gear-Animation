@@ -1,0 +1,13 @@
+@import "helpers/tools";
+@import "helpers/generics";
+@import "helpers/animations";
+@import "components/gear";
+
+html, body{
+    height: 101%;
+}
+
+.wrap{
+    @include dimensions(800px, 800px);
+    background: red;
+}

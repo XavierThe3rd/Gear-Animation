@@ -1,0 +1,28 @@
+@mixin dimensions ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+%tri-1{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 270px;
+    border-bottom-width: 270px;
+    border-right: 100px solid black;
+    left:-100px;
+}
+
+%tri-2{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 270px;
+    border-top-width: 270px;
+    border-left: 100px solid black;
+    left:20px;
+}

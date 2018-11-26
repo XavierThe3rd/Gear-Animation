@@ -1,0 +1,24 @@
+.gear{
+    @include dimensions(500px, 500px);
+    border-radius: 250px;
+}
+
+.teeth{
+    @include dimensions(20px, 540px);
+
+    &::before{
+       @extend %tri-1;
+    }
+
+    &::after{
+       @extend %tri-2;
+    }
+}
+
+@for $i from 1 through 16 {
+    $angle: rotate(11.25deg * $i);
+
+    .tooth-#{$i} {
+        transform: $angle;
+    }
+}
